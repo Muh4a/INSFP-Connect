@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+:root {
+  --twillight-indigo: #1d3461;
+  --steel-azure: #1f487e;
+  --baltic-blue: #376996;
+  --dusty-denim: #6290c8;
+  --wisteria-blue: #829cbc;
+  --platinium: #e9eaed;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.body-login-page {
+  font-family: "Nunito Sans";
+}
+
+.header-login {
+  background-color: var(--twillight-indigo);
+  padding: 1.2rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.radp-mefp {
+  color: white;
+  font-weight: 670;
+  display: grid;
+  place-items: center;
+  text-transform: uppercase;
+}
+
+.radp {
+  font-size: 2rem;
+}
+.mefp p {
+  font-size: 1.5rem;
+}
+
+.login {
+  background: #e2eaf4;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  flex: 1;
+}
+
+h1 {
+  font-weight: 600;
+  color: #2122227e;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 500px;
+  background: var(--platinium);
+  border-radius: 15px;
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 30px 40px;
+  margin-bottom: 30px;
+}
+
+.login-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 25px;
+}
+
+.login-card-content-title img {
+  height: 50px;
+  width: auto;
+}
+.login-card-content-title p {
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.2;
+  color: #000;
+  margin: 0;
+}
+.login-card-content-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.login-forms {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.login-forms form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.login-forms input {
+  width: 300px;
+  padding: 6px 8px;
+  border: 1px solid #7a7a7a;
+  background-color: #fff;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 14px;
+  color: #333;
+}
+
+.login-forms input:hover {
+  border: 1px solid var(--steel-azure);
+}
+.login-forms input:focus {
+  border-color: var(--baltic-blue);
+  outline: none;
+}
+
+.btn-connect {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.btn-connect button {
+  background-color: var(--twillight-indigo);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: inherit;
+}
+
+.btn-connect button:hover {
+  background-color: var(--steel-azure);
+}
+
+.mdp-oublié a {
+  text-decoration: none;
+  color: #2122227e;
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+.mdp-oublié a:hover {
+  color: #212222c2;
+}
+
+.footer-login {
+  background-color: var(--twillight-indigo);
+  color: white;
+  padding: 1rem 5% 1rem;
+  font-size: 0.9rem;
+  margin-top: auto;
+  display: grid;
+  place-items: center;
+}
+.footer-login a {
+  color: white;
+}
+.footer-login a:hover {
+  color: rgb(211, 209, 206);
+}
+
+/* --- RESPONSIVE POUR MOBILE --- */
+@media (max-width: 768px) {
+  .header-login {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .radp {
+    font-size: 1.2rem;
+  }
+
+  .mefp p {
+    font-size: 1rem;
+  }
+
+  .dz,
+  .ministere {
+    height: 40px;
+  }
+
+  .login-card {
+    width: 90%;
+    padding: 20px;
+  }
+}
