@@ -21,10 +21,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
-
-.body-login-page,
-.body-dashboard-page {
   font-family: "Nunito Sans";
 }
 
